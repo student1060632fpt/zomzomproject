@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>
+    Portfolio</title>
+
+  <!-- Bootstrap -->
+
+  <link href="./css/bootstrap.css" rel="stylesheet">
+
+  <!-- font awesome  -->
+
+  <link rel="stylesheet" type="text/css" href="fontawesome5.0.2\web-fonts-with-css\css\fontawesome-all.min.css">
+
+
+  <!--	bootstap style-->
+
+  <link rel="stylesheet" type="text/css" href="./css/base.css">
+
+
+  <!-- my style  -->
+
+  <link rel="stylesheet" href="./css/mystyle.css">
+
+
+  <!-- banner style  -->
+
+  <link rel="stylesheet" href="./css/banner-style.css">
+
+
+
+</head>
+
+
+<body>
+
+  <div id="root">
+    <nav class="navbar navbar-expand-md navbar-fixed-top d-print">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a aria-current="page" class="navbar-brand active" href="/">
+            <img src="./imgs/logo.png" alt=""> Cinemax
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse flex-row-reverse" id="collapsibleNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="">
+              <a aria-current="page" class="nav-link active" href="/">
+                Home</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="/about">
+                Movie</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="/list-movie">
+                Cinema</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="/material">
+                Material</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="/dang-ky">
+                Đăng Ký</a>
+            </li>
+            <li class="">
+              <a class="form-inline btn button-main" href="/dang-nhap">
+                Đăng nhập</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <section class="banner-section">
+        <div class="banner-background">
+        </div>
+        <div class="container">
+          <div class="banner-content text-center">
+            <h1 class="title text-uppercase">
+              <span class="d-block">
+                book your</span> tickets <span class="txt-rotate" data-period="1000"
+                data-rotate="[ &quot;secure&quot;, &quot;quickly&quot;, &quot;safety&quot;]">
+                <span class="wrap">
+                  secure</span>
+              </span>
+            </h1>
+            <p>
+              Your ticket to live entertainment!</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="container ticket-search-section">
+      <div class="search-tab text-center">
+        <div class="title">
+          <p class="category">
+            Welcome to Cinemax!</p>
+          <h3 class="text-uppercase">
+            What are you looking for?</h3>
+        </div>
+        <form class="form-inline row">
+          <div class="form-group col-lg-4 col-md-12">
+            <input type="text" id="search" placeholder="Search for movie">
+            <button class="btn btn-search" type="button">
+              <i class="fa fa-search">
+              </i>
+            </button>
+          </div>
+          <div class="form-group col-lg-4 col-md-6">
+            <div class="thumb">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA9NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6YWFmZDM1NzktMWZiMS02YjQxLTlkZDgtOTViMmM2MTJkOThiIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjk2MTg1NUY3MTlGMzExRUE5RjVFRjVBNTNBM0RDNjQwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjk2MTg1NUY2MTlGMzExRUE5RjVFRjVBNTNBM0RDNjQwIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjE2MjNkZDdjLTUzNjItMDE0Mi1iNWY4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"
+                class="" alt="date">
+            </div>
+            <span class="type">
+              Date</span>
+            <div class="select">
+              <select class="date-select">
+                <option value="26-12-19">
+                  23/10/2020</option>
+                <option value="26-12-19">
+                  24/10/2020</option>
+                <option value="26-12-19">
+                  25/10/2020</option>
+                <option value="26-12-19">
+                  26/10/2020</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group col-lg-4 col-md-6">
+            <div class="thumb">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAApCAYAAAC2qTBFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA9NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6YWFmZDM1NzktMWZiMS02YjQxLTlkZDgtOTViMmM2MTJkOThiIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkMwMjg4REUzMTlGMzExRUE5NUZEQzEzNzEyMUZCQ0NGIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkMwMjg4REUyMTlGMzExRUE5NUZEQzEzNzEyMUZCQ0NGIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjE2MjNkZDdjLTUzNjItMDE0Mi1iNWY4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"
+                class="" alt="cinema">
+            </div>
+            <span class="type">
+              Cinema</span>
+            <div class="select">
+              <select class="date-select">
+                <option value="26-12-19">
+                  BHD Star</option>
+                <option value="26-12-19">
+                  CGV</option>
+                <option value="26-12-19">
+                  Cinestar</option>
+                <option value="26-12-19">
+                  Lotte cinema</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="container" id="carousel-movie">
+      <div class="row d-flex">
+        <div class="col-lg-6 align-self-center">
+          <h3>
+            Movie</h3>
+          <p class="d-wrap">
+            Be sure not to miss these Movies today.</p>
+        </div>
+        <div class="col-lg-6 align-self-center">
+          <ul class="nav float-md-right">
+            <li class=" active">
+              <a class="btn mr-3 nav-link" data-toggle="tab" href="#home">
+                Now showing</a>
+            </li>
+            <li>
+              <a class="btn mr-3 nav-link" data-toggle="tab" href="#menu1">
+                Comming soon</a>
+            </li>
+            <li>
+              <a class="btn nav-link" data-toggle="tab" href="#menu2">
+                Popular</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="">
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <div class="row">
+
+              <div class="col-md-3">
+                <div class="card">
+                  <a class="link-img" href="./movieDetail.html">
+                    <img class="card-img-top" src="./imgs/dao-kinh-hoang_gp01.jpg" alt="Dao Kinh Hoang"></a>
+                  <div class="card-body">
+                    <h4><a class="card-title" href="./movieDetail.html">Inside out</a></h4>
+                    <hr>
+                    <p>
+                      <img src="./asset/img/tomatoes.png" alt="tomatoes"> 9
+                      <img src="./asset/img/date.png" class="ml-3" alt="Date"> 30-11-2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <a class="link-img" href="./movieDetail.html">
+                    <img class="card-img-top" src="./imgs/gio-ve-nha-hay-muon-bi-thut-2-cai-rang-cua_gp01.jpeg" alt="Dao Kinh Hoang"></a>
+                  <div class="card-body">
+                    <h4><a class="card-title" href="./movieDetail.html">Onward</a></h4>
+                    <hr>
+                    <p>
+                      <img src="./asset/img/tomatoes.png" alt="tomatoes"> 9
+                      <img src="./asset/img/date.png" class="ml-3" alt="Date"> 30-11-2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <a class="link-img" href="./movieDetail.html">
+                    <img class="card-img-top" src="./imgs/angry-bird-2_gp01.jpg" alt="Dao Kinh Hoang"></a>
+                  <div class="card-body">
+                    <h4><a class="card-title" href="./movieDetail.html">Avenger</a></h4>
+                    <hr>
+                    <p>
+                      <img src="./asset/img/tomatoes.png" alt="tomatoes"> 9
+                      <img src="./asset/img/date.png" class="ml-3" alt="Date"> 30-11-2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <a class="link-img" href="./movieDetail.html">
+                    <img class="card-img-top" src="./imgs/vo-ba_gp01.png" alt="Dao Kinh Hoang"></a>
+                  <div class="card-body">
+                    <h4><a class="card-title" href="./movieDetail.html">Vo ba</a></h4>
+                    <hr>
+                    <p>
+                      <img src="./asset/img/tomatoes.png" alt="tomatoes"> 9
+                      <img src="./asset/img/date.png" class="ml-3" alt="Date"> 30-11-2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <div class="row">
+
+              <div class="col-md-3">
+                <div class="card">
+                  <a class="link-img" href="./movieDetail.html">
+                    <img class="card-img-top" src="./imgs/dao-kinh-hoang_gp01.jpg" alt="Dao Kinh Hoang"></a>
+                  <div class="card-body">
+                    <h4><a class="card-title" href="./movieDetail.html">Inside out</a></h4>
+                    <hr>
+                    <p>
+                      <img src="./asset/img/tomatoes.png" alt="tomatoes"> 9
+                      <img src="./asset/img/date.png" class="ml-3" alt="Date"> 30-11-2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <a class="link-img" href="./movieDetail.html">
+                    <img class="card-img-top" src="./imgs/gio-ve-nha-hay-muon-bi-thut-2-cai-rang-cua_gp01.jpeg" alt="Dao Kinh Hoang"></a>
+                  <div class="card-body">
+                    <h4><a class="card-title" href="./movieDetail.html">Onward</a></h4>
+                    <hr>
+                    <p>
+                      <img src="./asset/img/tomatoes.png" alt="tomatoes"> 9
+                      <img src="./asset/img/date.png" class="ml-3" alt="Date"> 30-11-2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <a class="link-img" href="./movieDetail.html">
+                    <img class="card-img-top" src="./imgs/angry-bird-2_gp01.jpg" alt="Dao Kinh Hoang"></a>
+                  <div class="card-body">
+                    <h4><a class="card-title" href="./movieDetail.html">Avenger</a></h4>
+                    <hr>
+                    <p>
+                      <img src="./asset/img/tomatoes.png" alt="tomatoes"> 9
+                      <img src="./asset/img/date.png" class="ml-3" alt="Date"> 30-11-2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <a class="link-img" href="./movieDetail.html">
+                    <img class="card-img-top" src="./imgs/vo-ba_gp01.png" alt="Dao Kinh Hoang"></a>
+                  <div class="card-body">
+                    <h4><a class="card-title" href="./movieDetail.html">Vo ba</a></h4>
+                    <hr>
+                    <p>
+                      <img src="./asset/img/tomatoes.png" alt="tomatoes"> 9
+                      <img src="./asset/img/date.png" class="ml-3" alt="Date"> 30-11-2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <div class="row">
+
+              <div class="col-md-3">
+                <div class="card">
+                  <a class="link-img" href="./movieDetail.html">
+                    <img class="card-img-top" src="./imgs/dao-kinh-hoang_gp01.jpg" alt="Dao Kinh Hoang"></a>
+                  <div class="card-body">
+                    <h4><a class="card-title" href="./movieDetail.html">Inside out</a></h4>
+                    <hr>
+                    <p>
+                      <img src="./asset/img/tomatoes.png" alt="tomatoes"> 9
+                      <img src="./asset/img/date.png" class="ml-3" alt="Date"> 30-11-2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <a class="link-img" href="./movieDetail.html">
+                    <img class="card-img-top" src="./imgs/gio-ve-nha-hay-muon-bi-thut-2-cai-rang-cua_gp01.jpeg" alt="Dao Kinh Hoang"></a>
+                  <div class="card-body">
+                    <h4><a class="card-title" href="./movieDetail.html">Onward</a></h4>
+                    <hr>
+                    <p>
+                      <img src="./asset/img/tomatoes.png" alt="tomatoes"> 9
+                      <img src="./asset/img/date.png" class="ml-3" alt="Date"> 30-11-2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <a class="link-img" href="./movieDetail.html">
+                    <img class="card-img-top" src="./imgs/angry-bird-2_gp01.jpg" alt="Dao Kinh Hoang"></a>
+                  <div class="card-body">
+                    <h4><a class="card-title" href="./movieDetail.html">Avenger</a></h4>
+                    <hr>
+                    <p>
+                      <img src="./asset/img/tomatoes.png" alt="tomatoes"> 9
+                      <img src="./asset/img/date.png" class="ml-3" alt="Date"> 30-11-2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <a class="link-img" href="./movieDetail.html">
+                    <img class="card-img-top" src="./imgs/vo-ba_gp01.png" alt="Dao Kinh Hoang"></a>
+                  <div class="card-body">
+                    <h4><a class="card-title" href="./movieDetail.html">Vo ba</a></h4>
+                    <hr>
+                    <p>
+                      <img src="./asset/img/tomatoes.png" alt="tomatoes"> 9
+                      <img src="./asset/img/date.png" class="ml-3" alt="Date"> 30-11-2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-section">
+          <div class="container footer-subcribe-section" id="subcribe">
+            <div class="subcribe-tab text-center">
+              <div class="subcribe-text">
+                <p class="category">
+                  SUBSCRIBE TO CINEMAX</p>
+                <h3>
+                  TO GET BENIFITS</h3>
+                <form class="form-inline mt-5">
+                  <span>
+                    <input type="text" class="form-control" name="" placeholder="Your email address ">
+                    <input name="" class="btn btn-primary" type="button" value="Subcribe">
+                  </span>
+                </form>
+                <p class="mt-4">
+                  We respect your privacy, so we never share your info</p>
+              </div>
+            </div>
+          </div>
+          <div class="container footer-info">
+            <div class="row footer-info-top mb-3">
+              <span class="col-md-6 footer-logo">
+                <a href="">
+                  <img src="/static/media/logo.b1e116a7.png" class="img-fluid" alt="">
+                  CINEMAX</a>
+              </span>
+              <span class="col-md-6 footer-icon text-right">
+                <a href="">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-twitter" aria-hidden="true">
+                  </i>
+                </a>
+                <a href="">
+                  <i class="fab fa-pinterest-p" aria-hidden="true">
+                  </i>
+                </a>
+                <a href="">
+                  <i class="fab fa-google" aria-hidden="true">
+                  </i>
+                </a>
+                <a href="">
+                  <i class="fab fa-instagram" aria-hidden="true">
+                  </i>
+                </a>
+              </span>
+            </div>
+            <div class="row mt-5 footer-info-bottom">
+              <p class="copyright col-md-6">
+                Copyright © 2020. All Rights Reserved By
+                <a href="">
+                  <span class="light-color">
+                    Cinemax</span>
+                </a>
+              </p>
+              <span class="footer-small-sitemap col-md-6 text-right">
+                <a href="">
+                  About</a>
+                <a href="">
+                  Terms Of Use</a>
+                <a href="">
+                  Privacy Policy</a>
+                <a href="">
+                  FAQ</a>
+                <a href="">
+                  Feedback</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <!-- jquery -->
+
+    <script src="./js/jquery-1.11.3.min.js">
+    </script>
+
+    <script src="./js/jquery-ui-1.12.1.min.js">
+    </script>
+    <script src="./js/bootstrap-3.3.7.js"></script>
+
+    <!-- tween max  -->
+
+    <script src="GS/TweenMax.min.js">
+    </script>
+
+
+
+
+</body>
+
+
+</html>

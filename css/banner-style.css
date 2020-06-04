@@ -1,0 +1,136 @@
+/*import font*/
+@font-face {
+    font-family: Ubuntu;
+    src: url(./../fonts/Ubuntu-L.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(./../fonts/Ubuntu-B.ttf);
+    font-weight: bold;
+}
+.bold {
+	font-weight: bold !important;
+}
+.frame {
+    background-color: #f2f2f2;
+    font-family: "Ubuntu", sans-serif;
+    width: 468px;
+	height: 299px;
+
+    letter-spacing: 5px;
+    overflow: hidden;
+}
+@media screen and (max-width: 769px){
+    .frame{
+
+        transform: scale(0.7);
+    }
+}
+/*scene 1*/
+.block {
+    position: absolute;
+    opacity: 0;
+    background: #333332;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    margin: 0;
+    padding: 5px 19px;
+}
+h3.sen1 {
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+
+    color: white;
+    font-weight: normal;
+    font-size: 11pt;
+    margin-top: 10px;
+}
+.Product {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: 0;
+}
+.Product img {
+    width: 100%;
+}
+
+/* scence 2 */
+#b2 {
+    top: 50%;
+}
+
+/* scence 3 */
+#b3 {
+    top: 100%;
+}
+
+/* scence 4  */
+#p4 {
+    background-color: #f2f2f2;
+}
+#b4 {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    margin: 0;
+    color: #333332;
+    text-align: center;
+}
+#b4 h3.sen2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: "Ubuntu", sans-serif;
+
+}
+#b4 h3.sen3 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+#b4 a {
+    text-decoration: none;
+    color: #f2f2f2;
+    background-color: #333332;
+    padding: 8px 15px;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+#b4 a:hover {
+    opacity: 0.8;
+}
+#action {
+    opacity: 0;
+}
+
+/* replay */
+#REP {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    outline: none;
+    width: 8%;
+    opacity: 0;
+    z-index: 10;
+    animation: #REP 2s;
+}
+#REP:hover {
+    transition: all 1s;
+    transform: rotate(-360deg);
+    transform-origin: center;
+}
+#REP img {
+    width: 100%;
+}

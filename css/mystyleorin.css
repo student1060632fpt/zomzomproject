@@ -655,8 +655,8 @@ footer {
     background-color: transparent;
     width: 30vw;
     border-radius: 25px;
-    padding: 0;
-    padding-left: 10px;
+    padding: 23px 25px;
+    padding-left: 25px;
     outline: 0;
     box-shadow: 0 3px 10px 0 transparent
 }
@@ -790,7 +790,7 @@ footer {
 
 .detail .img-film img {
     position: absolute;
-    width: 90%;
+    width: 17vw;
     object-fit: cover;
     z-index: 1;
     border: 1px solid #17305f;
@@ -1002,9 +1002,13 @@ footer {
 
 .row-theater {
     background-color: #01173f;
-    border-bottom: 1px solid #11326f
-}
+    border-bottom: 1px solid #11326f;
 
+}
+.row-theater > .col-sm-4{
+    border-right: 1px solid #11326f;
+
+}
 .row-theater:last-child {
     border-bottom: none
 }

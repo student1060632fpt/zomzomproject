@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>
+    Portfolio</title>
+
+  <!-- Bootstrap -->
+
+  <link href="./css/bootstrap.css" rel="stylesheet">
+
+  <!-- font awesome  -->
+
+  <link rel="stylesheet" type="text/css" href="fontawesome5.0.2\web-fonts-with-css\css\fontawesome-all.min.css">
+
+
+  <!--	bootstap style-->
+
+  <link rel="stylesheet" type="text/css" href="./css/base.css">
+
+
+  <!-- my style  -->
+
+  <link rel="stylesheet" href="./css/mystyle.css">
+  <link rel="stylesheet" href="./css/mystyleorin.css">
+
+
+  <!-- banner style  -->
+
+  <link rel="stylesheet" href="./css/banner-style.css">
+
+
+
+</head>
+
+
+<body>
+
+  <div id="root">
+    <nav class="navbar navbar-expand-md navbar-fixed-top d-print">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a aria-current="page" class="navbar-brand active" href="./index.html">
+            <img src="./imgs/logo.png" alt=""> Cinemax
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse flex-row-reverse" id="collapsibleNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="">
+              <a aria-current="page" class="nav-link active" href="./index.html">
+                Home</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="/about">
+                Movie</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="/list-movie">
+                Cinema</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="/material">
+                Material</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="/dang-ky">
+                Đăng Ký</a>
+            </li>
+            <li class="">
+              <a class="form-inline btn button-main" href="/dang-nhap">
+                Đăng nhập</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="banner-detail">
+      <img src="./asset/img/blog03.jpg" alt="banner-img" class="banner-detail-img">
+
+    </div>
+    <div class="container detail">
+      <div class="row">
+        <div class="col-sm-3 img-film">
+          <img src="http://movie0706.cybersoft.edu.vn/hinhanh/dao-kinh-hoang_gp01.jpg" alt="Dao Kinh Hoang">
+
+        </div>
+        <div class="col-sm-9 film-resume">
+          <h3>Inside out</h3>
+          <div class="film-div-tag">
+            <a href="#" class="film-tag">
+              HORROR</a>
+          </div>
+          <div class="d-flex mb-5">
+            <div class="calendar">
+              <i class="far fa-calendar-alt mr-2" aria-hidden="true">
+              </i>30th November 2020
+            </div>
+            <div class="film-time ml-4">
+              <i class="far fa-clock mr-2" aria-hidden="true">
+              </i>120 mins
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rate">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+
+          </div>
+          <div class="col-sm-9">
+            <div class="row">
+              <div class="col-sm-3 tomatoes text-center">
+                <img src="asset/img/tomatoes.png" alt="tomatoes">
+                <span><span>90</span>%</span>
+                <p class="mt-2">
+                  Rotten Tomatoes</p>
+              </div>
+              <div class="col-sm-3 text-center">
+                <fieldset class="rating">
+                  <input type="radio" id="heart5" name="rating" value="5">
+                  <label class="full" for="heart5" title="Awesome - 5 hearts">
+                  </label><input type="radio" id="heart4" name="rating" value="4">
+                  <label class="full" for="heart4" title="Pretty good - 4 hearts">
+                  </label><input type="radio" id="heart3" name="rating" value="3">
+                  <label class="full" for="heart3" title="Meh - 3 hearts">
+                  </label><input type="radio" id="heart2" name="rating" value="2">
+                  <label class="full" for="heart2" title="Kinda bad - 2 hearts">
+                  </label><input type="radio" id="heart1" name="rating" value="1">
+                  <label class="full" for="heart1" title="Sucks big time - 1 heart">
+                  </label></fieldset><br><br><span class="rating-number">
+                  3</span> score
+              </div>
+              <div class="col-sm-6 film-button">
+                <button class="btn-normal mr-3" data-toggle="modal" data-target="#exampleModal">
+                  Trailer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container movie-tab">
+      <ul class="nav nav-tabs">
+        <li class="nav-item active">
+          <a class="" data-toggle="tab" href="#bookTickets">
+            Book tickets</a></li>
+        <li class="nav-item">
+          <a class="" data-toggle="tab" href="#movieInfo">
+            Summary</a></li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane container active" id="bookTickets">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" dir="ltr">
+            <div class="item active">
+              <div class="row">
+                <div data-index="-6" tabindex="-1" class="col-md-2 col-sm-3 col-xs-4" aria-hidden="true">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/05</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="-5" tabindex="-1" class="col-md-2 col-sm-3 col-xs-4" aria-hidden="true">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/06</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="-4" tabindex="-1" class="col-md-2 col-sm-3 col-xs-4" aria-hidden="true">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/07</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="-3" tabindex="-1" class="col-md-2 col-sm-3 col-xs-4" aria-hidden="true">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/08</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="-2" tabindex="-1" class="col-md-2 col-sm-3 col-xs-4" aria-hidden="true">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/09</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="-1" tabindex="-1" class="col-md-2 col-sm-3 col-xs-4" aria-hidden="true">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        08/24</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div data-index="0" class="col-md-2 col-sm-3 col-xs-4 slick-current" tabindex="-1" aria-hidden="false"
+                  style="outline: none;">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/01</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="1" class="col-md-2 col-sm-3 col-xs-4" tabindex="-1" aria-hidden="false"
+                  style="outline: none;">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/02</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="2" class="col-md-2 col-sm-3 col-xs-4" tabindex="-1" aria-hidden="false"
+                  style="outline: none;">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/03</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="3" class="col-md-2 col-sm-3 col-xs-4" tabindex="-1" aria-hidden="false"
+                  style="outline: none;">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/04</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="4" class="col-md-2 col-sm-3 col-xs-4" tabindex="-1" aria-hidden="false"
+                  style="outline: none;">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/05</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="5" class="col-md-2 col-sm-3 col-xs-4" tabindex="-1" aria-hidden="false"
+                  style="outline: none;">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/06</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div data-index="6" class="col-md-2 col-sm-3 col-xs-4 tabindex=" -1" aria-hidden="true"
+                  style="outline: none;">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/07</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="7" class="col-md-2 col-sm-3 col-xs-4 tabindex=" -1" aria-hidden="true"
+                  style="outline: none;">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/08</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="8" class="col-md-2 col-sm-3 col-xs-4 tabindex=" -1" aria-hidden="true"
+                  style="outline: none;">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/09</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="9" class="col-md-2 col-sm-3 col-xs-4 tabindex=" -1" aria-hidden="true"
+                  style="outline: none;">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/01</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="10" class="col-md-2 col-sm-3 col-xs-4 tabindex=" -1" aria-hidden="true"
+                  style="outline: none;">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/02</button>
+                    </div>
+                  </div>
+                </div>
+                <div data-index="11" class="col-md-2 col-sm-3 col-xs-4 tabindex=" -1" aria-hidden="true"
+                  style="outline: none;">
+                  <div>
+                    <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                      <button class="btn-normal">
+                        01/03</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="container-theater">
+          <div class="row row-theater">
+            <div class="col-sm-4">
+              <div class="row theater">
+                <div class="col-sm-2">
+                  <a href="" class="theater-map">
+                    <i class="fa fa-map-marker" aria-hidden="true">
+                    </i></a>
+                </div>
+                <div class="col-sm-10">
+                  <a href="">
+                    BHD Star Cineplex - Vincom Lê Văn Việt</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-ticket">
+              <div class="row text-center div-ticket">
+                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                    data-target="#seatModal">10:10</button></div>
+                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                    data-target="#seatModal">12:10</button></div>
+                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                    data-target="#seatModal">14:10</button></div>
+                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                    data-target="#seatModal">16:10</button></div>
+                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                    data-target="#seatModal">18:10</button></div>
+                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                    data-target="#seatModal">20:10</button></div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-theater">
+            <div class="col-sm-4">
+              <div class="row theater">
+                <div class="col-sm-2">
+                  <a href="" class="theater-map">
+                    <i class="fa fa-map-marker" aria-hidden="true">
+                    </i></a>
+                </div>
+                <div class="col-sm-10">
+                  <a href="">
+                    CNS - Quốc Thanh</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-ticket">
+              <div class="row text-center div-ticket">
+                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                    data-target="#seatModal">16:10</button></div>
+                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                    data-target="#seatModal">18:10</button></div>
+                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                    data-target="#seatModal">20:10</button></div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-theater">
+            <div class="col-sm-4">
+              <div class="row theater">
+                <div class="col-sm-2">
+                  <a href="" class="theater-map">
+                    <i class="fa fa-map-marker" aria-hidden="true">
+                    </i></a>
+                </div>
+                <div class="col-sm-10">
+                  <a href="">
+                    BHD Star Cineplex - Bitexco</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-ticket">
+              <div class="row text-center div-ticket">
+                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                    data-target="#seatModal">10:10</button></div>
+                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                    data-target="#seatModal">12:10</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane container" id="movieInfo">
+        <div class="container">
+          <h3>Synopsis</h3>
+          <p>After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear,
+            Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school.</p>
+          <h3>Cast</h3>
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="row">
+                  <div data-index="-4" tabindex="-1" class="col-sm-3 col-xs-4" aria-hidden="true">
+                    <div>
+                      <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                        <div class="my-cast">
+                          <div class="contain-avatar-cast">
+                            <img src="./asset/img/act1.jpeg" alt="cast" class="avatar-cast">
+
+                          </div>
+                          <p class="cast-name">
+                            <a href="">
+                              Jessica Chastain</a></p>
+                          <p class="comedien-name">
+                            Sara</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-index="-3" tabindex="-1" class="col-sm-3 col-xs-4" aria-hidden="true">
+                    <div>
+                      <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                        <div class="my-cast">
+                          <div class="contain-avatar-cast">
+                            <img src="./asset/img/act2.jpg" alt="cast" class="avatar-cast">
+
+                          </div>
+                          <p class="cast-name">
+                            <a href="">
+                              Michael Fassbender</a></p>
+                          <p class="comedien-name">
+                            Magneto</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-index="-2" tabindex="-1" class="col-sm-3 col-xs-4" aria-hidden="true">
+                    <div>
+                      <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                        <div class="my-cast">
+                          <div class="contain-avatar-cast">
+                            <img src="./asset/img/act3.jpg" alt="cast" class="avatar-cast">
+
+                          </div>
+                          <p class="cast-name">
+                            <a href="">
+                              James McAvoy</a></p>
+                          <p class="comedien-name">
+                            Professor X</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-index="-1" tabindex="-1" class="col-sm-3 col-xs-4" aria-hidden="true">
+                    <div>
+                      <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                        <div class="my-cast">
+                          <div class="contain-avatar-cast">
+                            <img src="./asset/img/act4.png" alt="cast" class="avatar-cast">
+
+                          </div>
+                          <p class="cast-name">
+                            <a href="">
+                              Ewan McGregor</a></p>
+                          <p class="comedien-name">
+                            Doctor Sleep</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div data-index="0" class="col-sm-3 col-xs-4 slick-current" tabindex="-1" aria-hidden="false">
+                    <div>
+                      <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                        <div class="my-cast">
+                          <div class="contain-avatar-cast">
+                            <img src="./asset/img/act5.jpg" alt="cast" class="avatar-cast">
+
+                          </div>
+                          <p class="cast-name">
+                            <a href="">
+                              Chris Evan</a></p>
+                          <p class="comedien-name">
+                            Captain America</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-index="1" class="col-sm-3 col-xs-4" tabindex="-1" aria-hidden="false">
+                    <div>
+                      <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                        <div class="my-cast">
+                          <div class="contain-avatar-cast">
+                            <img src="./asset/img/act6.jpg" alt="cast" class="avatar-cast">
+
+                          </div>
+                          <p class="cast-name">
+                            <a href="">
+                              Denis Đặng</a></p>
+                          <p class="comedien-name">
+                            White Lotus</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-index="2" class="col-sm-3 col-xs-4" tabindex="-1" aria-hidden="false">
+                    <div>
+                      <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                        <div class="my-cast">
+                          <div class="contain-avatar-cast">
+                            <img src="./asset/img/act7.jpg" alt="cast" class="avatar-cast">
+
+                          </div>
+                          <p class="cast-name">
+                            <a href="">
+                              Zachary Quinto</a></p>
+                          <p class="comedien-name">
+                            Spock</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-index="3" class="col-sm-3 col-xs-4" tabindex="-1" aria-hidden="false">
+                    <div>
+                      <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                        <div class="my-cast">
+                          <div class="contain-avatar-cast">
+                            <img src="./asset/img/act8.jpg" alt="cast" class="avatar-cast">
+
+                          </div>
+                          <p class="cast-name">
+                            <a href="">
+                              Charlize theron</a></p>
+                          <p class="comedien-name">
+                            Furiosa</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div data-index="4" class="col-sm-3 col-xs-4" tabindex=" -1" aria-hidden="true">
+                    <div>
+                      <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                        <div class="my-cast">
+                          <div class="contain-avatar-cast">
+                            <img src="./asset/img/act9.jpg" alt="cast" class="avatar-cast">
+
+                          </div>
+                          <p class="cast-name">
+                            <a href="">
+                              Jessica Chastain</a></p>
+                          <p class="comedien-name">
+                            Sara</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-index="5" class="col-sm-3 col-xs-4" tabindex=" -1" aria-hidden="true">
+                    <div>
+                      <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                        <div class="my-cast">
+                          <div class="contain-avatar-cast">
+                            <img src="./asset/img/act9.jpg" alt="cast" class="avatar-cast">
+
+                          </div>
+                          <p class="cast-name">
+                            <a href="">
+                              Michael Fassbender</a></p>
+                          <p class="comedien-name">
+                            Magneto</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-index="6" class="col-sm-3 col-xs-4" tabindex=" -1" aria-hidden="true">
+                    <div>
+                      <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                        <div class="my-cast">
+                          <div class="contain-avatar-cast">
+                            <img src="./asset/img/act1.jpeg" alt="cast" class="avatar-cast">
+
+                          </div>
+                          <p class="cast-name">
+                            <a href="">
+                              James McAvoy</a></p>
+                          <p class="comedien-name">
+                            Professor X</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-index="6" class="col-sm-3 col-xs-4" tabindex=" -1" aria-hidden="true">
+                    <div>
+                      <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
+                        <div class="my-cast">
+                          <div class="contain-avatar-cast">
+                            <img src="./asset/img/act1.jpeg" alt="cast" class="avatar-cast">
+
+                          </div>
+                          <p class="cast-name">
+                            <a href="">
+                              James McAvoy</a></p>
+                          <p class="comedien-name">
+                            Professor X</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content modal-trailer">
+            <div class="modal-header">
+              <p class="modal-title" id="exampleModalLabel">
+                Trailer Inside out</p><button type="btn-normal" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                  ×</span></button>
+            </div>
+            <div class="modal-body">
+              <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen="" src="https://www.youtube.com/embed/IHNzOHi8sJs" style="width: 100%; height: 300px;">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="seatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body text-center p-5">
+              <p>Welcome!</p>
+              <h3>Select your seats</h3><img src="./asset/img/seat-plan.png" class="" alt="seat">
+              <br><button class="btn button-main">
+                Seat plan <i class="fa fa-chevron-right" aria-hidden="true">
+                </i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-section">
+          <div class="container footer-subcribe-section" id="subcribe">
+            <div class="subcribe-tab text-center">
+              <div class="subcribe-text">
+                <p class="category">
+                  SUBSCRIBE TO CINEMAX</p>
+                <h3>
+                  TO GET BENIFITS</h3>
+                <form class="form-inline mt-5">
+                  <span>
+                    <input type="text" class="form-control" name="" placeholder="Your email address ">
+                    <input name="" class="btn btn-primary" type="button" value="Subcribe">
+                  </span>
+                </form>
+                <p class="mt-4">
+                  We respect your privacy, so we never share your info</p>
+              </div>
+            </div>
+          </div>
+          <div class="container footer-info">
+            <div class="row footer-info-top mb-3">
+              <span class="col-md-6 footer-logo">
+                <a href="">
+                  <img src="/static/media/logo.b1e116a7.png" class="img-fluid" alt="">
+                  CINEMAX</a>
+              </span>
+              <span class="col-md-6 footer-icon text-right">
+                <a href="">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-twitter" aria-hidden="true">
+                  </i>
+                </a>
+                <a href="">
+                  <i class="fab fa-pinterest-p" aria-hidden="true">
+                  </i>
+                </a>
+                <a href="">
+                  <i class="fab fa-google" aria-hidden="true">
+                  </i>
+                </a>
+                <a href="">
+                  <i class="fab fa-instagram" aria-hidden="true">
+                  </i>
+                </a>
+              </span>
+            </div>
+            <div class="row mt-5 footer-info-bottom">
+              <p class="copyright col-md-6">
+                Copyright © 2020. All Rights Reserved By
+                <a href="">
+                  <span class="light-color">
+                    Cinemax</span>
+                </a>
+              </p>
+              <span class="footer-small-sitemap col-md-6 text-right">
+                <a href="">
+                  About</a>
+                <a href="">
+                  Terms Of Use</a>
+                <a href="">
+                  Privacy Policy</a>
+                <a href="">
+                  FAQ</a>
+                <a href="">
+                  Feedback</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <!-- jquery -->
+
+    <script src="./js/jquery-1.11.3.min.js">
+    </script>
+
+    <script src="./js/jquery-ui-1.12.1.min.js">
+    </script>
+    <script src="./js/bootstrap-3.3.7.js"></script>
+
+    <!-- tween max  -->
+
+    <script src="GS/TweenMax.min.js">
+    </script>
+
+
+
+
+</body>
+
+
+</html>

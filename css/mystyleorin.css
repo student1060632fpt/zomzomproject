@@ -850,7 +850,7 @@ footer {
 .rate .rating>label:before {
     margin: 4px;
     font-size: 1.25em;
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
     display: inline-block;
     content: "\f004"
 }
@@ -1088,3 +1088,19 @@ footer {
     display: flex;
     align-items: stretch
 }
+
+
+
+.carousel-control  .glyphicon-chevron-left{
+    font-size: 2rem;
+    margin-left: -100px;
+}
+
+.carousel-control .glyphicon-chevron-right{
+    margin-right: -100px;
+    font-size: 2rem;
+}
+
+
+
+

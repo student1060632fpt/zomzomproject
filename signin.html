@@ -29,6 +29,8 @@
   <link rel="stylesheet" href="./css/mystyle.css">
   <link rel="stylesheet" href="./css/mystyleorin.css">
 
+  <link rel="stylesheet" href="./css/style-sign.css">
+
 
   <!-- banner style  -->
 
@@ -40,7 +42,7 @@
 
 
 <body>
-  <!--root-->
+
   <div id="root">
     <nav class="navbar navbar-expand-md navbar-fixed-top d-print">
       <div class="container">
@@ -87,124 +89,60 @@
         </div>
       </div>
     </nav>
-
-    <div class="banner-detail banner-listmovie">
-      <img src="asset/img/banner07.jpg" alt="banner-img" class="banner-detail-img">
-      <div class="banner-text text-center">
-        <p class="takealook">Take a look at our</p>
-
-        <h2 class="text-uppercase">Sitemap
-        </h2>
-      </div>
-    </div>
-
-    <!--Container-->
-    <div class="container sitemap">
-
-      <div class="row">
-
-        <div class="col-lg-3 col-sm-6">
-          <div class="gallery-item two">
-            <div class="gallery-thumb">
-              <a href="./index.html" class="img-pop">
-                <p>Home</p>
-              </a>
-              <img src="./asset/img/gallery05.jpg" alt="gallery">
+    <div class="background-img-sign">
+      <div class="container">
+        <div class="padding-top padding-bottom">
+          <div class="account-area">
+            <div class="section-header-3 text-center">
+              <span class="cate">Hello</span>
+              <h2 class="title">Welcome back </h2>
             </div>
-          </div>
-          <div class="gallery-item two">
-            <div class="gallery-thumb">
-              <a href="./theater.html" class="img-pop">
-                <p>Cinema</p>
-              </a>
-              <img src="./asset/img/gallery05.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="gallery-item two">
-            <div class="gallery-thumb">
-              <a href="./movieDetail.html" class="img-pop">
-                <p>Movie</p>
-              </a>
-              <img src="./asset/img/gallery05.jpg" alt="gallery">
-            </div>
-          </div>
-
-
-
-        </div>
-
-        <div class="col-lg-6">
-          <div class="gallery-item two">
-            <div class="gallery-thumb">
-              <a href="./index.html" class="img-pop">
-                <img src="./imgs/logo.png" class="img-fluid" alt="">
-              </a>
-              <img src="./asset/img/gallery08.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="gallery-item two">
-                <div class="gallery-thumb">
-                  <a href="./index.html" class="img-pop">
-                    <p>Home</p>
-                  </a>
-                  <img src="./asset/img/gallery05.jpg" alt="gallery">
-                </div>
+            <form class="account-form">
+              <div class="form-group">
+                <label for="email1">Email<span>*</span></label><br>
+                <input type="text" class="w-100" placeholder="Enter Your Email" id="email1" required>
               </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="gallery-item two">
-                <div class="gallery-thumb">
-                  <a href="./asset/img/gallery05.jpg" class="img-pop">
-                    <i class="flaticon-loupe"></i>
-                  </a>
-                  <img src="./asset/img/gallery05.jpg" alt="gallery">
-                </div>
+              <div class="form-group">
+                <label for="pass1">Password<span>*</span></label><br>
+                <input type="password" class="w-100" placeholder="Password" id="pass1" required>
               </div>
+              <div class="form-group checkbox checkgroup">
+                <!-- <input type="checkbox" id="bal" required checked> -->
+                
+                <input type="checkbox" id="bal2" required checked  style="height: auto;">
+                            <label for="bal2">remember password</label>
+                <a href="./signup.html" class="forget-pass text-right">Forget Password</a>
+              </div>
+              <div class="form-group text-center">
+                <input type="submit" value="Sign Up">
+              </div>
+            </form>
+            <div class="option">
+              Don't have an account? <a href="signup.html">sign up now</a>
             </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6">
-          <div class="gallery-item two">
-            <div class="gallery-thumb">
-              <a href="./asset/img/gallery05.jpg" class="img-pop">
-                <i class="flaticon-loupe"></i>
-              </a>
-              <img src="./asset/img/gallery05.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="gallery-item two">
-            <div class="gallery-thumb">
-              <a href="./asset/img/gallery05.jpg" class="img-pop">
-                <i class="flaticon-loupe"></i>
-              </a>
-              <img src="./asset/img/gallery05.jpg" alt="gallery">
-            </div>
-          </div>
-          <div class="gallery-item two">
-            <div class="gallery-thumb">
-              <a href="./asset/img/gallery05.jpg" class="img-pop">
-                <i class="flaticon-loupe"></i>
-              </a>
-              <img src="./asset/img/gallery05.jpg" alt="gallery">
-            </div>
-          </div>
-
-
-          <div class="col-lg-6">
-
-          </div>
-
-          <div class="col-sm-6 col-lg-3 order-lg-1">
-
+            <hr>
+            <div class="or"><span>Or</span></div>
+            <ul class="social-icons">
+              <li>
+                <a href="#0">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="active">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0">
+                  <i class="fab fa-google"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-
-    <!--Foorer-->
     <footer>
       <div class="footer-section">
         <div class="container footer-subcribe-section" id="subcribe">
@@ -278,7 +216,6 @@
         </div>
       </div>
     </footer>
-
   </div>
 
 

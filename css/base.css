@@ -397,3 +397,6 @@ flex-direction: column;
     display: flex;
     justify-content: flex-end;
 }
+.text-right{
+    text-align: right;
+}

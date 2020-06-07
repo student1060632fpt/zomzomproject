@@ -10,29 +10,25 @@
 <body>
 	<div class="frame">
 		<!--		scene 1-->
-		<img src="Pics/Untitled-2-01.jpg" class="Product" id="p1" alt="">
+		<div class="scence1">
+
+			<img src="./Pics/bhd-star-cineplex.png" class="logo-cinema" id="bhd" alt="">
+			<img src="./Pics/cgv.png" class="logo-cinema" id="cgv" alt="">
+			<img src="./Pics/cinestar.png" class="logo-cinema" id="cinestar" alt="">
+
+		</div>
+
+		<!-- scence 2  -->
 		<div class="block" id="b1">
-			<h2 class="sen1"><span class="bold">new</span> lookbook</h2>
+			<h2>BOOK</h2>
+			<div class="ticket-img">
+				Ticket
+			</div>
+			<p class="small">All in one website</p>
 		</div>
 
-		<!--		scene 2-->
-		<img src="Pics/Untitled-3-01.jpg" class="Product" id="p2" alt="">
 		<div class="block" id="b2">
-			<h2 class="sen1 bold">THE BEST PANTS</h2>
-		</div>
-
-		<!--		scence 3-->
-		<img src="Pics/Untitled-4-01.jpg" class="Product" id="p3" alt="">
-		<div class="block" id="b3">
-			<h2 class="sen1 bold"><span class="bold">1st</span> April</h2>
-		</div>
-
-		<!-- scence 4  -->
-		<div class="Product" id="p4" alt=""></div>
-		<div id="b4">
-			<h2 class="sen2 bold"> Azendo</h2>
-			<h2 class="sen3"> Song of the muse</h2>
-			<a href="#" id="action">Shop now</a>
+			
 		</div>
 
 		<button id="REP"><img src="Pics/img_403313.png" alt="replay"></button>
@@ -45,27 +41,22 @@
 		var tl = new TimelineLite();
 
 		//		scene 1
-		tl.to("#p1", 1, { opacity: 1 });
-		tl.to("#b1", .1, { opacity: 1, top: "50%" });
-		tl.to("#p1", .1, { opacity: 0, delay: 2});
-		tl.to("#b1", .1, { opacity: 0, top: "100%" });
+		tl.from("#bhd", .2, { opacity: 0, ease: "back.out(1.7)", y: -100 });
+		tl.from("#cgv", .2, { opacity: 0, y: "100px" });
+		tl.from("#cinestar", .2, { opacity: 0, y: "-100px" });
+		
+		tl.staggerFrom(".scence1 img", .2, { scale: 1.2, yoyo: true, repeat: 2}, .2);
+		tl.staggerTo(".scence1 img", .2, {scale: 0, delay: .8}, .2);
 
-		//		scence 2
-		tl.to("#p2", 1, { opacity: 1 });
-		tl.to("#b2", .1, { opacity: 1, rotation: 360});
-		tl.to("#p2", .1, { opacity: 0, delay: 2 });
-		tl.to("#b2", .1, { opacity: 0});
+		tl.from("#b1", .1, { opacity: 0, x: -100});
+		// var text = $('.ticket-img').SplitText();
+		// tl.set(text, {autoAlpha: 0});
+		// tl.staggerFromTo(text, .4, {autoAlpha: 0, scale: 7}, {autoAlpha: 1, scale: 1}, .1, reset);
+		tl.to("#b1", .1, { opacity: 0, x: 100, delay:1.5});
 
-		//		scence 3
-		tl.to("#p3", 1, { opacity: 1 });
-		tl.to("#b3", .1, { opacity: 1, top: "50%" });
-		tl.to("#p3, #b3", .1, { opacity: 0, delay: 2, top: "0%" });
+		
 
-		// scence 4 
-		tl.to("#p4", 1, { opacity: 1 });
-		tl.to("#b4", .1, { opacity: 1, left: "50%" });
-		tl.to("#action", .1, {opacity: 1});
-		tl.to("#action", 1, {scale: 1.1, repeat: 2, yoyo: true});
+
 
 		//replay
 		tl.to("#REP", .1, { opacity: 1 });

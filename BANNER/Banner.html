@@ -24,11 +24,22 @@
 			<div class="ticket-img">
 				Ticket
 			</div>
-			<p class="small">All in one website</p>
+			<p class="small">All cinema in one website</p>
 		</div>
 
+
+		<!-- <div class="scence2">
+
+			<img src="./Pics/bhd-star-cineplex.png" class="logo-cinema" id="" alt="">
+			<img src="./Pics/cgv.png" class="logo-cinema" id="cgv" alt="">
+			<img src="./Pics/cinestar.png" class="logo-cinema" id="cinestar" alt="">
+
+		</div> -->
+		<!-- scence 3  -->
 		<div class="block" id="b2">
-			
+			<h2>New movies...</h2>
+			<p class="small">Book right now</p>
+
 		</div>
 
 		<button id="REP"><img src="Pics/img_403313.png" alt="replay"></button>
@@ -53,6 +64,9 @@
 		// tl.set(text, {autoAlpha: 0});
 		// tl.staggerFromTo(text, .4, {autoAlpha: 0, scale: 7}, {autoAlpha: 1, scale: 1}, .1, reset);
 		tl.to("#b1", .1, { opacity: 0, x: 100, delay:1.5});
+
+		tl.from("#b2", .1, { opacity: 0, x: -100});
+		tl.to("#b2", .1, { opacity: 0, x: 100, delay:1.5});
 
 		
 

@@ -64,7 +64,7 @@ body {
 	width: 100%;
 	z-index: 0;
 }
-.scence1 {
+.scence1, .scence2 {
 	position: absolute;
 	display: flex;
 	justify-content: space-evenly;
@@ -73,7 +73,7 @@ body {
 	width: 100%;
 }
 
-.scence1 img {
+.scence1 img, .scence2 img {
 	width: 50px;
 }
 

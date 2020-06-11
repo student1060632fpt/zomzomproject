@@ -9,6 +9,14 @@
 
 <body>
 	<div class="frame">
+		<div class="block" id="intro">
+			<div class="logo-cinema">
+				<img src="./Pics/logo.png" alt="">
+			</div>
+			<h2>cinemax.com</h2>
+		</div>
+
+
 		<!--		scene 1-->
 		<div class="scence1">
 
@@ -51,6 +59,9 @@
 	$(document).ready(function () {
 		var tl = new TimelineLite();
 
+		tl.from("#intro", .5, {opacity: 0, scale:3, ease: 2});
+		tl.to("#intro", .2, {opacity:0, scale: 0, delay:1});
+
 		//		scene 1
 		tl.from("#bhd", .2, { opacity: 0, ease: "back.out(1.7)", y: -100 });
 		tl.from("#cgv", .2, { opacity: 0, y: "100px" });
@@ -66,7 +77,7 @@
 		tl.to("#b1", .1, { opacity: 0, x: 100, delay:1.5});
 
 		tl.from("#b2", .1, { opacity: 0, x: -100});
-		tl.to("#b2", .1, { opacity: 0, x: 100, delay:1.5});
+		// tl.to("#b2", .1, { opacity: 0, x: 100, delay:1.5});
 
 		
 

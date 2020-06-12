@@ -695,7 +695,7 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, .1)
 }
 
-.footer-section .footer-info .footer-icon i {
+.footer-icon i {
     border: 1px solid rgba(255, 255, 255, .1);
     padding: 14px;
     margin-left: 10px;
@@ -705,11 +705,11 @@ footer {
     transition: all .2s
 }
 
-.footer-section .footer-info .footer-icon i:hover {
+.footer-icon i:hover {
     background-color: #31d7a9
 }
 
-.footer-section .footer-info .footer-info-bottom {
+.footer-info-bottom {
     margin-bottom: 25px
 }
 

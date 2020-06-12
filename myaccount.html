@@ -28,13 +28,11 @@
 
   <link rel="stylesheet" href="./css/mystyle.css">
   <link rel="stylesheet" href="./css/mystyleorin.css">
-
-  <link rel="stylesheet" href="./css/style-sign.css">
+  <link rel="stylesheet" href="./css/myAccountStyle.css">
 
 
   <!-- banner style  -->
 
-  <link rel="stylesheet" href="./css/banner-style.css">
 
 
 
@@ -42,7 +40,7 @@
 
 
 <body>
-
+  <!--root-->
   <div id="root">
     <nav class="navbar navbar-expand-md navbar-fixed-top d-print">
       <div class="container">
@@ -74,7 +72,7 @@
                 Cinema</a>
             </li>
             <li class="">
-              <a class="nav-link" href="./sitemap.html">
+              <a class="nav-link active" href="./sitemap.html">
                 Sitemap</a>
             </li>
             <li class="">
@@ -89,60 +87,106 @@
         </div>
       </div>
     </nav>
-    <div class="background-img-sign">
-      <div class="container">
-        <div class="padding-top padding-bottom">
-          <div class="account-area">
-            <div class="section-header-3 text-center">
-              <span class="cate">Hello</span>
-              <h2 class="title">Welcome back </h2>
-            </div>
-            <form class="account-form">
-              <div class="form-group">
-                <label for="email1">Email<span>*</span></label><br>
-                <input type="text" class="w-100" placeholder="Enter Your Email" id="email1" required>
-              </div>
-              <div class="form-group">
-                <label for="pass1">Password<span>*</span></label><br>
-                <input type="password" class="w-100" placeholder="Password" id="pass1" required>
-              </div>
-              <div class="form-group checkbox checkgroup">
-                <!-- <input type="checkbox" id="bal" required checked> -->
 
-                <input type="checkbox" id="bal2" required checked style="height: auto;">
-                <label for="bal2">remember password</label>
-                <a href="./signup.html" class="forget-pass text-right">Forget Password</a>
-              </div>
-              <div class="form-group text-center">
-                <input type="submit" value="Sign In">
-              </div>
-            </form>
-            <div class="option">
-              Don't have an account? <a href="signup.html">sign up now</a>
+    <!-- ==========Banner-Section========== -->
+    <section class="speaker-banner bg_img" data-background="./asset/img/banner08.jpg">
+      <div class="container">
+        <div class="speaker-banner-content">
+          <h2 class="title">My Account</h2>
+          <ul class="breadcrumb">
+            <li>
+              my profile
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ==========Banner-Section========== -->
+
+    <!-- ==========Speaker-Single========== -->
+    <section class="speaker-single padding-top pt-lg-0">
+      <div class="container">
+        <div class="speaker-wrapper bg-six padding-top padding-bottom row">
+          <div class="col-sm-4 speaker-thumb">
+            <img src="./imgs/avatar.jpg" alt="speaker">
+            <a href="#0">www.website.com</a>
+          </div>
+          <div class="col-sm-8 speaker-content">
+            <div class="author">
+              <h2 class="title">My Name </h2>
+              <div class="info">Description about me, my knowledge and experience</div>
             </div>
-            <hr>
-            <div class="or"><span>Or</span></div>
-            <ul class="social-icons">
-              <li>
-                <a href="#0">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#0" class="">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#0">
-                  <i class="fab fa-google"></i>
-                </a>
-              </li>
-            </ul>
+            <div class="speak-container">
+              <div class="speak-row row">
+                <div class="item col-sm-6">
+                  <div class="item-thumb ml-3">
+                    <img src="./imgs/event-icon03.png" alt="event">
+                  </div>
+                  <div class="item-content">
+                    <span class="up">Drop me a line:</span>
+                    <a href="#">abc@gmail.com</a>
+                  </div>
+                </div>
+                <div class="item footer-icon col-sm-6">
+                  <a href="">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-twitter" aria-hidden="true">
+                    </i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-pinterest-p" aria-hidden="true">
+                    </i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-google" aria-hidden="true">
+                    </i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-instagram" aria-hidden="true">
+                    </i>
+                  </a>
+                </div>
+              </div>
+              <div class="speak-row row">
+                <div class="item col-sm-6">
+                  <div class="item-thumb ml-3">
+                    <img src="./asset/img/event-icon01.png" alt="event">
+                  </div>
+                  <div class="item-content">
+                    <span class="up">Call me:</span>
+                    <a href="#">123456789</a>
+                  </div>
+                </div>
+                <div class="item col-sm-6">
+                  <div class="item-thumb ml-3">
+                    <img src="./asset/img/event-icon02.png" alt="event">
+                  </div>
+                  <div class="item-content">
+                    <span class="up">My account</span>
+                    <a href="#">My password</a>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="content mt-5">
+              <h3 class="subtitle">About me</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe omnis sint esse totam quas, ab
+                facere perferendis mollitia enim sit aperiam consectetur, voluptates vero. Doloribus eveniet quis quo
+                incidunt quibusdam earum voluptas autem vitae beatae, reprehenderit ea dolorem et fugiat ullam cumque
+                accusamus at animi adipisci. Corrupti, perspiciatis voluptates.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- ==========Speaker-Single========== -->
+
+
+    <!--Foorer-->
     <footer>
       <div class="footer-section">
         <div class="container footer-subcribe-section" id="subcribe">
@@ -216,6 +260,7 @@
         </div>
       </div>
     </footer>
+
   </div>
 
 

@@ -107,6 +107,20 @@ h3 {
 .nav-tabs > li > a:hover {
     border-color: transparent;
 }
+@media screen and (max-width: 767px){
+	.navbar-toggle{
+		border: 1px solid white;
+	}
+	.navbar-toggle .icon-bar{
+		background-color: white;
+	}
+	.navbar li .nav-link::before{
+		display: none;
+	}
+	.navbar li {
+		text-align: center
+	}
+}
 .light-color {
     color: #31d7a9
 }
@@ -608,7 +622,11 @@ a[aria-expanded=true]::before {
 .card .card-img-top:hover {
     transform: scale(1.05)
 }
-
+@media screen and (max-width: 768px){
+	.card{
+		margin-top: 20px;
+	}
+}
 .slick-slide img {
     display: inline-block
 }
@@ -685,6 +703,12 @@ footer {
     border: 1px solid #fff;
     border-left: transparent
 }
+@media screen and (max-width: 767px){
+	.footer-section .footer-subcribe-section .subcribe-tab .subcribe-text form .btn{
+		margin-left: 0;
+		margin-top: 10px;
+	}
+}
 
 .footer-section .footer-info {
     margin-top: 100px
@@ -716,7 +740,14 @@ footer {
 .footer-section .footer-info .footer-small-sitemap a {
     margin-left: 30px
 }
-
+@media screen and (max-width: 767px){
+	.footer-section .footer-subcribe-section .subcribe-tab .subcribe-text form .form-control{
+		width: 100%;
+	}
+	.footer-icon i{
+		margin-left: 3px;
+	}
+}
 .theater-option {
     padding: 40px 0;
     background-color: #032055;
@@ -752,7 +783,15 @@ footer {
 .theater-img img:hover {
     transform: scale(1.1)
 }
-
+@media screen and (max-width: 767px){
+	.theater-img img {
+    width: 50%;
+		margin: 0px auto;
+}
+	.theater-img {
+		text-align: center
+	}
+}
 .banner-listmovie {
     height: 65vh
 }
@@ -781,7 +820,12 @@ footer {
     width: 100%;
     border-radius: 10px
 }
-
+@media screen and (max-width: 768px){
+	.banner-detail-img{
+		height: 100%;
+		object-fit: cover
+	}
+}
 .banner-detail::before {
     position: absolute;
     position: absolute;
@@ -811,6 +855,18 @@ footer {
     z-index: 1;
     border: 1px solid #17305f;
     border-radius: 5px
+}
+@media screen and (max-width: 767px){
+	.detail .img-film {
+		margin-top: 300px;
+		text-align: center;
+	}
+	.detail .img-film img{
+		width: 50vw;
+		position: inherit;
+		margin: 0 auto;
+	}
+	
 }
 
 .detail .film-resume {
@@ -884,6 +940,20 @@ footer {
 
 .rate .film-button {
     padding-top: 20px
+}
+@media screen and (max-width: 767px){
+	.rate .rating>label{
+		float: inherit;
+	}
+	.rate fieldset.rating{
+		float: inherit;
+	}
+	.display-xs-none{
+		display: none;
+	}
+	.rate .film-button{
+		text-align: center;
+	}
 }
 
 .btn-normal {
@@ -1006,7 +1076,15 @@ footer {
 .theater {
     padding: 20px
 }
-
+@media screen and (max-width: 767px){
+	.div-ticket,
+.theater {
+    text-align: center
+}
+	.row-theater .col-sm-2{
+		margin-bottom: 20px;
+	}
+}
 .div-ticket>div {
     margin-bottom: 15px
 }
@@ -1024,6 +1102,11 @@ footer {
 .row-theater > .col-sm-4{
     border-right: 1px solid #11326f;
 
+}
+@media screen and (max-width: 767px){
+	.row-theater > .col-sm-4{
+		text-align: center;
+	}
 }
 .row-theater:last-child {
     border-bottom: none
@@ -1116,6 +1199,11 @@ footer {
     margin-right: -100px;
     font-size: 2rem;
 }
+@media screen and (max-width: 768px){
+	.carousel-control .glyphicon-chevron-right{
+		display: none;
+	}
+}
 
 
 /*============== SITEMAP =============*/
@@ -1175,6 +1263,16 @@ footer {
     font-size: 2rem;
     
 }
+@media screen and (max-width: 767px){
+	.gallery-item::before{
+		opacity: .8;
+		visibility: visible;
+	}
+	.gallery-thumb p{
+		opacity: 1;
+		font-size: 3.5rem;
+	}
+}
 
 .gallery-thumb p:hover{
     opacity: 1;
@@ -1194,4 +1292,9 @@ footer {
 }
 .gallery-thumb a:hover img{
     opacity: 1;
+}
+@media screen and (max-width: 768px){
+    .navbar {
+        padding: 15px 5px;
+    }
 }

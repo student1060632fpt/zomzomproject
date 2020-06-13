@@ -26,7 +26,6 @@
 
   <!-- my style  -->
 
-  <link rel="stylesheet" href="./css/mystyle.css">
   <link rel="stylesheet" href="./css/mystyleorin.css">
 
 
@@ -45,8 +44,13 @@
     <nav class="navbar navbar-expand-md navbar-fixed-top d-print">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button 
+									type="button" 
+									class="navbar-toggle collapsed" 
+									data-toggle="collapse"
+            
+									data-target="#myNavbar"
+									>
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -57,7 +61,7 @@
           </a>
         </div>
 
-        <div class="collapse navbar-collapse flex-row-reverse" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse flex-row-reverse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
             <li class="">
               <a aria-current="page" class="nav-link" href="./index.html">
@@ -93,11 +97,11 @@
     </div>
     <div class="container detail">
       <div class="row">
-        <div class="col-sm-3 img-film">
+        <div class="col-sm-3 col-xs-12 img-film">
           <img src="http://movie0706.cybersoft.edu.vn/hinhanh/dao-kinh-hoang_gp01.jpg" alt="Dao Kinh Hoang">
 
         </div>
-        <div class="col-sm-9 film-resume">
+        <div class="col-sm-9 col-xs-12 film-resume">
           <h3>Inside out</h3>
           <div class="film-div-tag">
             <a href="#" class="film-tag">
@@ -122,15 +126,15 @@
           <div class="col-sm-3">
 
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-9 col-xs-12">
             <div class="row">
-              <div class="col-sm-3 tomatoes text-center">
+              <div class="col-md-3 col-sm-4 tomatoes text-center">
                 <img src="asset/img/tomatoes.png" alt="tomatoes">
                 <span><span>90</span>%</span>
                 <p class="mt-2">
                   Rotten Tomatoes</p>
               </div>
-              <div class="col-sm-3 text-center">
+              <div class="col-md-3 col-sm-4 text-center">
                 <fieldset class="rating">
                   <input type="radio" id="heart5" name="rating" value="5">
                   <label class="full" for="heart5" title="Awesome - 5 hearts">
@@ -142,11 +146,11 @@
                   <label class="full" for="heart2" title="Kinda bad - 2 hearts">
                   </label><input type="radio" id="heart1" name="rating" value="1">
                   <label class="full" for="heart1" title="Sucks big time - 1 heart">
-                  </label></fieldset><br><br><span class="rating-number">
+                  </label></fieldset><br class="display-xs-none"><br class="display-xs-none"><span class="rating-number">
                   3</span> score
               </div>
-              <div class="col-sm-6 film-button">
-                <button class="btn-normal mr-3" data-toggle="modal" data-target="#exampleModal">
+              <div class="col-md-6 col-sm-4 film-button">
+                <button class="btn-normal mr-3 margin-xs-none" data-toggle="modal" data-target="#exampleModal">
                   Trailer</button>
               </div>
             </div>
@@ -363,17 +367,17 @@
             </div>
             <div class="col-sm-8 col-ticket">
               <div class="row text-center div-ticket">
-                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                <div class="col-sm-3 col-xs-4"><button class="btn-ticket" data-toggle="modal"
                     data-target="#seatModal">10:10</button></div>
-                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                <div class="col-sm-3 col-xs-4"><button class="btn-ticket" data-toggle="modal"
                     data-target="#seatModal">12:10</button></div>
-                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                <div class="col-sm-3 col-xs-4"><button class="btn-ticket" data-toggle="modal"
                     data-target="#seatModal">14:10</button></div>
-                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                <div class="col-sm-3 col-xs-4"><button class="btn-ticket" data-toggle="modal"
                     data-target="#seatModal">16:10</button></div>
-                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                <div class="col-sm-3 col-xs-4"><button class="btn-ticket" data-toggle="modal"
                     data-target="#seatModal">18:10</button></div>
-                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                <div class="col-sm-3 col-xs-4"><button class="btn-ticket" data-toggle="modal"
                     data-target="#seatModal">20:10</button></div>
               </div>
             </div>
@@ -394,11 +398,11 @@
             </div>
             <div class="col-sm-8 col-ticket">
               <div class="row text-center div-ticket">
-                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                <div class="col-sm-3 col-xs-4"><button class="btn-ticket" data-toggle="modal"
                     data-target="#seatModal">16:10</button></div>
-                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                <div class="col-sm-3 col-xs-4"><button class="btn-ticket" data-toggle="modal"
                     data-target="#seatModal">18:10</button></div>
-                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                <div class="col-sm-3 col-xs-4"><button class="btn-ticket" data-toggle="modal"
                     data-target="#seatModal">20:10</button></div>
               </div>
             </div>
@@ -419,9 +423,9 @@
             </div>
             <div class="col-sm-8 col-ticket">
               <div class="row text-center div-ticket">
-                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                <div class="col-sm-3 col-xs-4"><button class="btn-ticket" data-toggle="modal"
                     data-target="#seatModal">10:10</button></div>
-                <div class="col-sm-3"><button class="btn-ticket" data-toggle="modal"
+                <div class="col-sm-3 col-xs-4"><button class="btn-ticket" data-toggle="modal"
                     data-target="#seatModal">12:10</button></div>
               </div>
             </div>
@@ -439,7 +443,7 @@
             <div class="carousel-inner">
               <div class="item active">
                 <div class="row">
-                  <div data-index="-4" tabindex="-1" class="col-sm-3 col-xs-4" aria-hidden="true">
+                  <div data-index="-4" tabindex="-1" class="col-sm-3 col-xs-4 display-xs-none" aria-hidden="true">
                     <div>
                       <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
                         <div class="my-cast">
@@ -511,7 +515,7 @@
               </div>
               <div class="item">
                 <div class="row">
-                  <div data-index="0" class="col-sm-3 col-xs-4 slick-current" tabindex="-1" aria-hidden="false">
+                  <div data-index="0" class="col-sm-3 col-xs-4 slick-current display-xs-none" tabindex="-1" aria-hidden="false">
                     <div>
                       <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
                         <div class="my-cast">
@@ -583,7 +587,7 @@
               </div>
               <div class="item">
                 <div class="row">
-                  <div data-index="4" class="col-sm-3 col-xs-4" tabindex=" -1" aria-hidden="true">
+                  <div data-index="4" class="col-sm-3 col-xs-4 display-xs-none" tabindex=" -1" aria-hidden="true">
                     <div>
                       <div class="text-center" tabindex="-1" style="width: 100%; display: inline-block;">
                         <div class="my-cast">
@@ -695,8 +699,8 @@
               <p>Welcome!</p>
               <h3>Select your seats</h3><img src="./asset/img/seat-plan.png" class="" alt="seat">
               <br><a href="./seat.html"><button href="./seat.html" class="btn button-main">
-                Seat plan <i class="fa fa-chevron-right" aria-hidden="true">
-                </i></button></a>
+                  Seat plan <i class="fa fa-chevron-right" aria-hidden="true">
+                  </i></button></a>
             </div>
           </div>
         </div>
@@ -758,18 +762,7 @@
                     Cinemax</span>
                 </a>
               </p>
-              <span class="footer-small-sitemap col-md-6 text-right">
-                <a href="">
-                  About</a>
-                <a href="">
-                  Terms Of Use</a>
-                <a href="">
-                  Privacy Policy</a>
-                <a href="">
-                  FAQ</a>
-                <a href="">
-                  Feedback</a>
-              </span>
+              
             </div>
           </div>
         </div>

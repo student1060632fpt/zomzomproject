@@ -9,6 +9,7 @@
 }
 
 
+
   /*Window Warning Starts Here*/
 .window-warning {
     position: fixed;
@@ -484,3 +485,14 @@
     padding: 32px 40px;
     padding-top: 0;
   }
+@media screen and (max-width: 768px){
+	.help-seat{
+		padding-top: 20px;
+		padding-bottom: 0px;
+	}
+}
+@media screen and (max-width: 767px){
+	.screen-area .subtitle{
+		margin-top: 50px;
+	}
+}

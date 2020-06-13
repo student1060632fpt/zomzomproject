@@ -46,22 +46,26 @@
         <nav class="navbar navbar-expand-md navbar-fixed-top d-print">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a aria-current="page" class="navbar-brand active" href="/">
-                        <img src="./imgs/logo.png" alt=""> Cinemax
-                    </a>
-                </div>
+                    <button 
+									type="button" 
+									class="navbar-toggle collapsed" 
+									data-toggle="collapse"
+									data-target="#myNavbar"
+									>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a aria-current="page" class="navbar-brand active" href="./index.html">
+            <img src="./imgs/logo.png" alt=""> Cinemax
+          </a>
+        </div>
 
-                <div class="collapse navbar-collapse flex-row-reverse" id="collapsibleNavbar">
-                    <ul class="nav navbar-nav navbar-right">
+        <div class="collapse navbar-collapse flex-row-reverse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
                         <li class="">
-                            <a aria-current="page" class="nav-link" href="/">
+                            <a aria-current="page" class="nav-link" href="/index.html">
                                 Home</a>
                         </li>
                         <li class="">
@@ -366,86 +370,7 @@
                                 </ul>
                                 <span>B</span>
                             </li>
-                            <li class="seat-line display-flex">
-                                <span>B</span>
-                                <ul class="seat--area display-flex">
-                                    <li class="front-seat">
-                                        <ul class="display-flex">
-                                            <li class="single-seat"> <button class="btn btn-none"
-                                                    onclick="openSeat(event)">
-                                                    <img src="./asset/img/movie/seat01.png" alt="seat"></button>
-                                            </li>
-                                            <li class="single-seat"> <button class="btn btn-none"
-                                                    onclick="openSeat(event)">
-                                                    <img src="./asset/img/movie/seat01.png" alt="seat"></button>
-                                            </li>
-                                            <li class="single-seat"> <button class="btn btn-none"
-                                                    onclick="openSeat(event)">
-                                                    <img src="./asset/img/movie/seat01.png" alt="seat"></button>
-                                            </li>
-                                            <li class="single-seat"> <button class="btn btn-none"
-                                                    onclick="openSeat(event)">
-                                                    <img src="./asset/img/movie/seat01.png" alt="seat"></button>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="front-seat">
-                                        <ul class="display-flex">
-                                            <li class="single-seat"> <button class="btn btn-none"
-                                                    onclick="openSeat(event)">
-                                                    <img src="./asset/img/movie/seat01.png" alt="seat">
-                                                    <span class="seat-number">6</span></button>
-                                            </li>
-                                            <li class="single-seat seat-booked">
-                                                <img src="./asset/img/movie/seat01.png" alt="seat"></a>
-                                                <span class="seat-number-booked">7</span>
-                                            </li>
-                                            <li class="single-seat seat-booked">
-                                                <img src="./asset/img/movie/seat01.png" alt="seat"></a>
-                                                <span class="seat-number-booked">8</span>
-                                            </li>
-                                            <li class="single-seat"> <button class="btn btn-none"
-                                                    onclick="openSeat(event)">
-                                                    <img src="./asset/img/movie/seat01.png" alt="seat"></button>
-                                            </li>
-                                            <li class="single-seat"> <button class="btn btn-none"
-                                                    onclick="openSeat(event)">
-                                                    <img src="./asset/img/movie/seat01.png" alt="seat"></button>
-                                            </li>
-                                            <li class="single-seat"> <button class="btn btn-none"
-                                                    onclick="openSeat(event)">
-                                                    <img src="./asset/img/movie/seat01.png" alt="seat"></button>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="front-seat">
-                                        <ul class="display-flex">
-                                            <li class="single-seat seat-booked">
-                                                <img src="./asset/img/movie/seat01.png" alt="seat"></a>
-                                                <span class="seat-number-booked">9</span>
-                                            </li>
-                                            <li class="single-seat seat-booked">
-                                                <img src="./asset/img/movie/seat01.png" alt="seat"></a>
-                                                <span class="seat-number-booked">10</span>
-                                            </li>
-                                            <li class="single-seat seat-booked">
-                                                <img src="./asset/img/movie/seat01.png" alt="seat"></a>
-                                                <span class="seat-number-booked">11</span>
-                                            </li>
-                                            <li class="single-seat"> <button class="btn btn-none"
-                                                    onclick="openSeat(event)">
-                                                    <img src="./asset/img/movie/seat01.png" alt="seat"></button>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <span>B</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <h5 class="subtitle">Vip</h5>
-                    <div class="screen-wrapper">
-                        <ul class="seat-area">
+                            
                             <li class="seat-line display-flex">
                                 <span>A</span>
                                 <ul class="seat--area display-flex">
@@ -812,14 +737,6 @@
                                 <img src="./asset/img/movie/seat01.png" alt="seat">
                             </button>
                             Empty seat
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="single-seat">
-                            <button class="btn btn-none active mr-3">
-                                <img src="./asset/img/movie/seat01.png" alt="seat">
-                            </button>
-                            Choosen seat
                         </div>
                     </div>
                     <div class="item">

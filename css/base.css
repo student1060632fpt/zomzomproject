@@ -397,6 +397,14 @@ flex-direction: column;
     display: flex;
     justify-content: flex-end;
 }
+@media screen and (max-width: 480px){
+	.float-md-right{
+    display: block;
+}
+	.margin-xs-none{
+		margin: 0 !important;
+	}
+}
 .text-right{
     text-align: right;
 }

@@ -458,7 +458,9 @@ a[aria-expanded=true]::before {
 .ticket-search-section .search-tab .form-inline .thumb:hover {
     box-shadow: none
 }
-
+/* #myCarousel2 .carousel-control .glyphicon-chevron-right, #myCarousel2 .carousel-control .glyphicon-chevron-left{
+    display: none;
+} */
 .ticket-search-section .search-tab .form-inline .type {
     color: #31d7a9!important
 }
@@ -466,6 +468,11 @@ a[aria-expanded=true]::before {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media screen and (max-width: 768px){
+    .ticket-search-section .search-tab .form-inline .form-group{
+        margin-top: 10px;
+    }
 }
 .my-select .select-hidden {
     display: none;
@@ -843,6 +850,11 @@ footer {
     margin-top: -30vh;
     color: #e9eeff
 }
+@media screen and (max-width: 768px){
+    .detail {
+        margin-top: -210px;
+    }
+}
 
 .detail .img-film {
     position: relative
@@ -872,7 +884,18 @@ footer {
 .detail .film-resume {
     color: #9aace5
 }
-
+@media screen and (max-width: 767px){
+	.detail .film-resume{
+		text-align: center;
+		margin-top: 20px;
+	}
+	.detail .d-flex{
+		display: block;
+	}
+	#myCarousel .btn-normal{
+		margin-top: 10px
+	}
+}
 .detail .film-resume .film-div-tag {
     margin-top: 20px;
     margin-bottom: 20px

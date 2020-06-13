@@ -1,3 +1,13 @@
+// my fix 
+$(window).scroll(function () {
+  if ($(document).scrollTop() > 100) {
+    $('.navbar').addClass('navbar-home');
+  } else {
+    $('.navbar').removeClass('navbar-home');
+  }
+});
+
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.

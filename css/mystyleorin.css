@@ -1114,7 +1114,12 @@ footer {
 
 .div-ticket>div:last-child,
 .div-ticket>div:nth-child(5) {
-    margin-bottom: 0
+    /* margin-bottom: 0 */
+}
+@media screen and (max-width: 790px) and (min-width: 500px){
+    .btn-day{
+        display:none;
+    }
 }
 
 .row-theater {
